@@ -6,6 +6,4 @@ Rails.application.routes.draw do
   get '/culture', to:'static_pages#culture'
   get '/facilities', to:'static_pages#facilities'
   get '/gallery', to:'static_pages#gallery'
-
-
 end
