@@ -1,3 +1,132 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/************************************************************************
+ *                          Scroll to top                               *
+ ************************************************************************/
+
+.scrollToTop {
+  background: image_url("bootom-top-arrow.png") no-repeat scroll 13px 12px #ffffff;
+  border: 3px solid #f0f1f3;
+  border-radius: 5px;
+  bottom: 20px;
+  display: inline-block;
+  height: 54px;
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 54px;
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+.scrollToTop:hover{
+  background-position: 13px -50px;
+  text-decoration: none;
+  outline: none;
+}
+/*************************** scrollToTop ***********************************/
+
+
+/************************************************************************
+ *                              Header                                  *
+ ************************************************************************/
+
+#header{
+	float: left;
+	display: inline;
+	width: 100%;
+  background-color: #313b3d;
+}
+.navbar-fixed-top{
+  border-width: 0 0 5px;
+}
+
+/*--------.menu_area-------- */
+.menu_area{
+  float: left;
+  display: inline;
+  width: 100%;
+}
+.navbar-brand {
+  height: 75px;
+  padding: 0;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 2.5px;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.navbar-default {
+  background-color: #fff;
+  border-color: #1aafe6;
+}
+#navbar{
+  overflow-x: hidden;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #1aafe6;
+  padding: 30px 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+  background-color: #1aafe6;
+  color: #fff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-nav > li > .dropdown-menu {
+  background-color: #00a0e3;
+}
+.navbar-nav > li > .dropdown-menu:before {
+  border-bottom: 15px solid #48575a;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 25px;
+  top: -15px;
+  width: 0;
+}
+.navbar-nav > li > .dropdown-menu li a {
+  border-bottom: 1.5px dotted rgba(255, 255, 255, 0.3);
+  color: #fff;
+  display: block;
+  opacity: 0.8;
+  padding: 10px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.navbar-nav > li > .dropdown-menu > li:last-child a {
+  border-bottom: medium none;
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  background-color:transparent;
+  text-decoration: none;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+}
+
+/*************************** Home slider*********************************/
