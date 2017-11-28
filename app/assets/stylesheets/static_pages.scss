@@ -96,6 +96,10 @@ $color_secondary : lighten($color_main, 10%) ; // light green
   font-weight: bold;
   margin-top: 2.5px;
 }
+.container > .navbar-header, .container > .navbar-collapse {
+  margin-right: -10px;
+  margin-left: -10px;
+}
 .navbar-default .navbar-main .navbar-brand:focus, .navbar-default .navbar-main .navbar-brand:hover {
   background-color: transparent;
   color: #fff;
