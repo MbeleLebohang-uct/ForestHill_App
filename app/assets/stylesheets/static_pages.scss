@@ -10,8 +10,9 @@
 Imports & Variables
 ========================================================================== */
 /* Variables */
-$color_main : #1aafe6 ; // main bleu
-$color_secondary : #00a0e3 ; // dark blue
+$color_main : #005a17 ; // main green
+$color_secondary : lighten($color_main, 10%) ; // light green
+
 /************************************************************************
  *                          Scroll to top                               *
  ************************************************************************/
@@ -121,7 +122,7 @@ $color_secondary : #00a0e3 ; // dark blue
   background-color: transparent;
 }
 .navbar-nav > li > .dropdown-menu {
-  background-color: #00a0e3;
+  background-color: $color_main;
 }
 .navbar-nav > li > .dropdown-menu:before {
   border-bottom: 15px solid #d0d0d0;
