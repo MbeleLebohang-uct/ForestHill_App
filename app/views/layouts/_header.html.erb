@@ -5,8 +5,32 @@
 <!--=========== BEGIN HEADER SECTION ================-->
 <header id="header">
   <!-- BEGIN MENU -->
-  <div class="menu_area">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+    <div class="navbar-top">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <ul class="list-unstyled list-inline header-contact">
+                    <li> <i class="fa fa-phone"></i> <a href="tel:">+27 60 337 4512 </a> </li>
+                     <li> <i class="fa fa-envelope"></i> <a href="mailto:info@foresthill.uct.ac.za">info@foresthill.uct.ac.za</a> </li>
+               </ul> <!-- /.header-contact  -->
+            </div>
+            <div class="col-sm-6 col-xs-12 text-right">
+                <ul class="list-unstyled list-inline header-social">
+                    <li> <a href="#"> <i class="fa fa-facebook"></i> </a> </li>
+                    <li> <a href="#"> <i class="fa fa-twitter"></i>  </a> </li>
+                    <li> <a href="#"> <i class="fa fa-google"></i>  </a> </li>
+                    <li> <a href="#"> <i class="fa fa-youtube"></i>  </a> </li>
+                    <li> <a href="#"> <i class="fa fa fa-pinterest-p"></i>  </a> </li>
+               </ul> <!-- /.header-social  -->
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="navbar-main">
+      <div class="container">
         <div class="navbar-header">
           <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -19,7 +43,7 @@
           <!-- TEXT BASED LOGO -->
           <!-- <a class="navbar-brand" href="index.html">WpF <span>Degree</span></a> -->
           <!-- IMG BASED LOGO  -->
-          <a href = "<%= root_url %>"><img class="navbar-brand" src="<%= image_url('logo/blue_logo.png') %>" alt="logo"></a>
+          <a href = "<%= root_url %>"><img class="navbar-brand" src="<%= image_url('logo/forest_logo.jpg') %>" alt="logo"></a>
            <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->
 
         </div>
@@ -68,8 +92,9 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav>
-  </div>
+    </div>
+
+  </nav>
   <!-- END MENU -->
 </header>
 <!--=========== END HEADER SECTION ================-->
