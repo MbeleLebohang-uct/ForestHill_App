@@ -17,16 +17,60 @@ Imports & Variables
 $color_main : #005a17 ; // main green
 $color_secondary : lighten($color_main, 10%) ; // light green
 
-/************************************************************************
- *                              base                                    *
- ************************************************************************/
- a {
-   color: $color_main;
-   text-decoration: none;
- }
- a:hover, a:focus {
-   color: $color_main;
-   text-decoration: underline;
- }
+/*=======================================================================
+  universal
+=========================================================================*/
+a {
+ color: $color_main;
+ text-decoration: none;
+}
+a:hover, a:focus {
+ color: $color_main;
+ text-decoration: underline;
+}
 
-/*************************** base *****************************************/
+/*************************** universal ***************************************/
+
+
+/* ****************************************************************************
+	Module
+*****************************************************************************/
+a.btn-primary, input.btn-primary{
+  color: white;
+  background-color: $color_main;
+  border: 2px solid $color_main;
+}
+a.btn-secondary, input.btn-secondary{
+  color: $color_main;
+  background-color: transparent;
+  border: 2px solid $color_main;
+}
+.btn-primary {
+
+	background:$color_secondary;
+	border:none;
+	border-radius: 0;
+	padding: 10px 25px;
+	border:1px solid transparent;
+
+	@include transition(all, .3s);
+	&:hover {
+		background:#fff;
+		color: $color_main;
+		border:2px solid $color_main;
+	}
+}
+
+.btn-secondary {
+
+	background:#fff;
+	color: $color_main;
+	border-radius: 0;
+
+	&:hover {
+
+		background:$color_main;
+		color: #fff;
+	}
+}
+/*************************** Module ***************************************/

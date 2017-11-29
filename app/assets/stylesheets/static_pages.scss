@@ -12,7 +12,9 @@ Imports & Variables
 /* Variables */
 $color_main : #005a17 ; // main green
 $color_secondary : lighten($color_main, 10%) ; // light green
-
+$gray-medium-light: #eaeaea;
+$gray-light: lighten($gray-medium-light, 10%);
+$gray-darker: darken($gray-medium-light, 10%);
 /************************************************************************
  *                          Scroll to top                               *
  ************************************************************************/
@@ -167,3 +169,87 @@ $color_secondary : lighten($color_main, 10%) ; // light green
 }
 
 /*************************** Home slider*********************************/
+
+/************************************************************************
+ *                             carousel                                 *
+ ************************************************************************/
+ #homeCarousel{
+   margin-top: 5%;
+ }
+.carousel-home {
+
+	img{
+		width: 100%;
+	}
+	.carousel-control {
+
+		  background: $color_main;
+		  height: 80px;
+		  width: 40px;
+		  top: 50%;
+		  margin-top: -40px;
+
+		  .fa {
+		  	  font-size: 2.5em;
+  			  padding-top: 12px;
+		  }
+
+		  &:hover {
+		  	width: 50px;
+		  }
+	}
+
+	.carousel-caption {
+		top: 50%;
+		bottom: auto;
+		transform : translateY(-50%);
+	}
+
+	.carousel-title	{
+		color: #fff;
+		font-size: 50px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.carousel-subtitle {
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+
+	.btn{
+			margin-top: 30px ;
+	}
+}
+
+/*=======================================================================================
+  footer
+  =======================================================================================*/
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 2px solid $gray-medium-light;
+  color: $gray-light;
+
+  #copyright{
+    a{
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  
+  a {
+    margin-left: 30px;
+    color: gray;
+    &:hover {
+      color: gray;
+    }
+    &:visited{
+      color:#777
+    }
+  }
+  div {
+    display: inline;
+  }
+}
