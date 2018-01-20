@@ -18,7 +18,7 @@ gem 'bootstrap-sass',               '3.3.7'
 gem 'font-awesome-rails'
 gem 'uglifier',                     '3.2.0'
 gem 'jquery-rails',                 '4.3.1'
-gem "jquery-slick-rails"
+gem 'owlcarousel-rails'
 
 gem 'coffee-rails',                 '4.2.2'
 gem 'turbolinks',                   '5.0.1'

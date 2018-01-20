@@ -1,16 +1,33 @@
 $(document).on('turbolinks:load',function() {
-  /* -----------------------------------------------------------
-   *                   Dropdown menu
-   * ----------------------------------------------------------- */
+    /*---------------------------------------------------------------------------*
+     *                              media slider                                 *
+     *---------------------------------------------------------------------------*/
+    $('.owl-carousel').owlCarousel({
+      items: 4,
+      slideBy: 3,
+      loop: true,
+      lazyLoad: true,
+      responsive: true,
+      rewindSpeed: 2500,
+      stopOnHover: true,
+      pagination: false,
+      autoPlay: 5000,
 
-   // for hover dropdown menu
-   $('ul.nav li.dropdown').hover(function() {
-     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-   }, function() {
-     $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-   });
+      responsive:{
+          0:{
+              items:1,
+              navigation:true
+          },
+          767:{
+              items:2,
+              navigation:false
+          },
+          991:{
+              items:3,
+              navigation:true,
+              loop:false
+          }
+      }
+  })
 
-   $('.carousel').carousel({
-     interval: 4000 //changes the speed
-   })
 });

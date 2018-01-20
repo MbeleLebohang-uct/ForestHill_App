@@ -14,6 +14,6 @@ class StaticPagesController < ApplicationController
   def facilities
   end
 
-  def blog
+  def blog_fashion_art
   end
 end

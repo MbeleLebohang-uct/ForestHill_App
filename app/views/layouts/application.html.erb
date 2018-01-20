@@ -3,13 +3,17 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all',
-                                              'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab",
+                                              media: 'all', 'data-turbolinks-track': 'reload' %>
+    
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
   </head>
   <body class="<%= controller_name %>-<%= action_name %>">
-    <%= render 'layouts/header' %>
+
+    <% if action_name[0..3] != "blog" %>
+      <%= render 'layouts/header' %>
+    <% end %>
 
     <%= yield %>
 

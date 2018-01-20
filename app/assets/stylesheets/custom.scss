@@ -20,6 +20,13 @@ $color_secondary : lighten($color_main, 10%) ; // light green
 /*=======================================================================
   universal
 =========================================================================*/
+body, html{
+	font-size:100%;
+	background:#fff;
+	max-width:1200px;
+	margin:0 auto;
+}
+
 a {
  color: $color_main;
  text-decoration: none;
