@@ -28,72 +28,56 @@
           </div>
       </div>
     </div>
-
     <div class="navbar-main">
       <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->
-          <!-- TEXT BASED LOGO -->
-          <!-- <a class="navbar-brand" href="index.html">WpF <span>Degree</span></a> -->
-          <!-- IMG BASED LOGO  -->
-          <a href = "<%= root_url %>"><img class="navbar-brand" src="<%= image_url('logo/forest_logo.png') %>" alt="logo"></a>
-           <!-- <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>  -->
-
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li><a href="course-archive.html">About</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Facilities<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Games Room</a></li>
-                <li><a href="#">TV Room</a></li>
-                <li><a href="#">Dance Room</a></li>
-                <li><a href="#">Library</a></li>
-                <li><a href="#">Computer Lab</a></li>
-                <li><a href="#">Tuck Shop</a></li>
+          <div class="navbar-header">
+              <a class="navbar-brand navbar-link" href="<%= root_url %>"> <img src="<%= image_url('logo/forest_logo_transparent.png') %>" id="logo"></a>
+              <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          </div>
+          <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav navbar-right navbar-main">
+                  <li role="presentation" id="active">
+                    <%= link_to "About", about_url ,class: "text-uppercase",'aria-haspoup' => 'true' %>
+                  </li>
+                  <li class="dropdown" aria-haspopup="true"><a class="text-uppercase dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="<%= facilities_url %>">Facilities <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a href="<%= facilities_url %>">Computer Laboratory</a></li>
+                          <li role="presentation"><a href="<%= facilities_url %>">Games Room </a></li>
+                          <li role="presentation"><a href="<%= facilities_url %>">Dance Room</a></li>
+                          <li role="presentation"><a href="<%= facilities_url %>">TV Room</a></li>
+                          <li role="presentation"><a href="<%= facilities_url %>">Tuck Shop</a></li>
+                          <li role="presentation"><a href="<%= facilities_url %>">Library </a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown" aria-haspopup="true"><a class="text-uppercase dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="<%= sports_url %>">Sports<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a href="<%= sports_url %>">Basket Ball</a></li>
+                          <li role="presentation"><a href="<%= sports_url %>">NetBall </a></li>
+                          <li role="presentation"><a href="<%= sports_url %>">Soccer </a></li>
+                          <li role="presentation"><a href="<%= sports_url %>">Hockey </a></li>
+                          <li role="presentation"><a href="<%= sports_url %>">Chess </a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown" aria-haspopup="true"><a class="text-uppercase dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="<%= academics_url %>">Academics <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a href="<%= academics_url %>">Mentors </a></li>
+                          <li role="presentation"><a href="<%= academics_url %>">Tutors </a></li>
+                      </ul>
+                  </li>
+                  <li role="presentation"><a class="text-uppercase" href="<%= culture_url %>">Culture </a></li>
+                  <li role="presentation"><a class="text-uppercase" href="<%= gallery_url %>">Gallery </a></li>
+                  <li class="dropdown" aria-haspopup="true"><a class="text-uppercase dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="<%= blog_url %>">BLOG <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                          <li role="presentation"><a href="<%= blog_url %>">Health &amp; Fitness</a></li>
+                          <li role="presentation"><a href="<%= blog_url %>">Chef@Home </a></li>
+                          <li role="presentation"><a href="<%= blog_url %>">Fashion &amp; Art</a></li>
+                          <li role="presentation"><a href="<%= blog_url %>">The Weekend</a></li>
+                      </ul>
+                  </li>
               </ul>
-            </li>
-            <li><a href="#">Culture</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Academics<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Mentors</a></li>
-                <li><a href="#">Tutors</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sports<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Soccer</a></li>
-                <li><a href="#">Netball</a></li>
-                <li><a href="#">Basket Ball</a></li>
-                <li><a href="#">Hockey</a></li>
-                <li><a href="#">Chess</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Gallery</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Blog<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Health and Fitness</a></li>
-                <li><a href="#">Chef@Home</a></li>
-                <li><a href="#">Fashion and Art</a></li>
-                <li><a href="#">The Weekend</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
+          </div>
       </div>
     </div>
-
   </nav>
   <!-- END MENU -->
 </header>

@@ -14,6 +14,12 @@ class StaticPagesController < ApplicationController
   def facilities
   end
 
+  def sports
+  end
+
+  def academics
+  end
+
   def blog
   end
 end
