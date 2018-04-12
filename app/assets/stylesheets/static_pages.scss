@@ -75,6 +75,9 @@ $gray-darker: darken($gray-medium-light, 10%);
 .navbar-fixed-top{
   border-width: 0 0 5px;
   border-color: $color_main;
+  max-width: 1200px;
+  display: inline-block;
+  margin: 0 auto;
 }
 /***********Navbar top********/
 .navbar-main{

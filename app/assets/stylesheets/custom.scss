@@ -17,9 +17,21 @@ Imports & Variables
 $color_main : #005a17 ; // main green
 $color_secondary : lighten($color_main, 10%) ; // light green
 
+$font_main : 'Roboto', sans-serif;
+$font_titles : 'Dosis', sans-serif;
+
 /*=======================================================================
   universal
 =========================================================================*/
+body {
+  max-width: 1200px;
+  font-family: $font-main;
+  font-weight: lighter;
+  position: relative;
+  margin: 0 auto;
+  background: image_url('bg.jpg'); 
+}
+
 a {
  color: $color_main;
  text-decoration: none;
@@ -74,3 +86,107 @@ a.btn-secondary, input.btn-secondary{
 	}
 }
 /*************************** Module ***************************************/
+
+
+/**************************************************************************
+						Default Banner
+***************************************************************************/
+.default_banner{
+	margin-top: 105px;
+	text-align:center;
+	padding: 10px;
+	background: image_url("default_banner.png") no-repeat center;
+	background-size: cover;
+}
+
+.default_banner .jumbotron{
+  padding: 15px;
+  margin: 30px;
+  background-color: rgba(10, 60, 10,0.75);
+  width:40%;
+  color:#fff;
+}
+
+.btn_one{
+  background:transparent;
+  border:2px solid #fff;
+  border-radius:0px;
+  color:#fff;
+}
+
+hr.underline-one{
+  height:10px;
+  border:1px;
+  box-shadow:inset 0 7px 7px -3px rgba(11, 99, 10, 0.6);
+  -webkit-border-radius:1px;
+  -moz-border-radius:1px;
+  -ms-border-radius:1px;
+  border-radius:1px;
+  margin-top:0px;
+}
+
+.Jumbotron_title, .jumbotron h1, .jumbotron .h1{
+  text-shadow:rgba(0, 0, 0, 0.6) 0px 2px 4px;
+  color:#fff;
+}
+
+/************************* Default Banner ****************************/
+
+/**************************************************************************
+						Resposive
+***************************************************************************/
+@media (max-width:991px) {
+  .jumbotron p{
+    margin-bottom:10px;
+    font-size:15px;
+    font-weight:100;
+  }
+}
+
+@media (max-width:767px) {
+  .jumbotron p{
+    margin-bottom:5px;
+    font-size:10px;
+    font-weight:100;
+  }
+}
+
+@media (max-width:991px) {
+  .default_banner .jumbotron{
+    padding:20px;
+    margin-bottom:20px;
+    background-color:rgba(10, 60, 10,0.75);
+    width:400px;
+    color:#fff;
+  }
+}
+
+@media (max-width:767px) {
+  .default_banner .jumbotron{
+    padding:10px;
+    display: inline-block;
+    margin: 20px auto;
+    background-color:rgba(10, 60, 10,0.75);
+    width:280px;
+    color:#fff;
+  }
+}
+
+@media (max-width:991px) {
+  .Jumbotron_title, .jumbotron h1, .jumbotron .h1{
+    font-size:50px;
+  }
+}
+
+@media (max-width:767px) {
+  .Jumbotron_title, .jumbotron h1, .jumbotron .h1{
+    font-size:30px;
+  }
+  .header-social{
+  	text-align: center;
+  }
+   .header-contact{
+  	text-align: center;
+  }
+}
+
