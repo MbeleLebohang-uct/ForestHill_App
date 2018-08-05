@@ -95,7 +95,7 @@ $gray-darker: darken($gray-medium-light, 10%);
 #logo{
   max-height: 75px;
   display: inline-block;
-  margin: -5px 10px 0px 15px;
+  margin: -5px 10px 0px 55px;
 }
 
 .navbar-default .navbar-brand {
@@ -157,7 +157,7 @@ $gray-darker: darken($gray-medium-light, 10%);
 }
 
 .navbar-nav > li > .dropdown-menu li a {
-  border-bottom: 1.5px dotted rgba(255, 255, 255, 0.3);
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   display: block;
   opacity: 0.8;
@@ -182,6 +182,9 @@ $gray-darker: darken($gray-medium-light, 10%);
 }
 .navbar-default .navbar-main .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
   background-color: transparent;
+}
+.navbar-toggle{
+  margin-top: 20px;
 }
 
 /*************************** Home slider*********************************/
@@ -274,6 +277,46 @@ $gray-darker: darken($gray-medium-light, 10%);
   }
 }
 /*=======================================================================================
+  Banner bottom
+  =======================================================================================*/
+.home-banner-btm {
+  background: image_url('banner1.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+h3.agile-title {
+  text-transform: capitalize;
+  color: #333;
+  font-weight: 800;
+  font-size: 1.8em;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+}
+
+span.w3-line {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.09);
+}
+
+.bb-left {
+  border-right: 1px solid #b1b1b1;
+}
+
+.py-5{
+  padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
+}
+.col-lg-7{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/*=======================================================================================
   footer
   =======================================================================================*/
   footer {
@@ -326,13 +369,64 @@ $gray-darker: darken($gray-medium-light, 10%);
        transform: translate3d(0, 0, 0);
     }
 }
-@media (max-width: 768px){
+
+@media (min-width: 576px){
+  .pt-sm-5, .py-sm-5 {
+      padding-top: 3rem !important;
+  }
+  .home-banner-btm .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 1200px){
+  .home-banner-btm .container {
+      max-width: 1140px;
+  }
+  #logo{
+    margin-left: 120px;
+  }
+}
+@media (min-width: 992px){
+  .home-banner-btm .container {
+      max-width: 960px;
+  }
+  .pt-lg-5, .py-lg-5 {
+    padding-top: 3rem !important;
+  }
+  .col-lg-5{
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .mt-lg-0, .my-lg-0 {
+    margin-top: 0 !important;
+  }
+  .pr-lg-5, .px-lg-5 {
+    padding-right: 3rem !important;
+  }
+  .pl-lg-5, .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+  .col-lg-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+}
+@media (min-width: 768px){
+  .home-banner-btm .container {
+      max-width: 720px;
+  }
   .container > .navbar-header, .container > .navbar-collapse {
     margin-right: -45px;
     margin-left: -45px;
   }
 }
-
-@media (max-width: 1024px){
-
+@media (max-width: 768px){
+  #logo{
+    margin-left: 35px;
+  }
 }
+
