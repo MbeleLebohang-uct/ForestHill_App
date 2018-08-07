@@ -9,7 +9,12 @@
 /* =============================================================================
 Imports & Variables
 ========================================================================== */
-/* Variables */
+/* Imports */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* mixins, variables, etc. */
 $color_main : #005a17 ; // main green
 $color_secondary : lighten($color_main, 10%) ; // light green
 $gray-medium-light: #eaeaea;
@@ -434,37 +439,6 @@ line-height:1.8em;
   border: 1px solid #0e0d0d;
   border-radius: 10px;
 }
-/*=======================================================================================
-  footer
-  =======================================================================================*/
-  footer {
-    margin-top: 45px;
-    padding-top: 5px;
-    border-top: 2px solid $gray-medium-light;
-    color: $gray-light;
-  
-    #copyright{
-      a{
-        &:hover{
-          text-decoration: none;
-        }
-      }
-    }
-  
-    a {
-      margin-left: 30px;
-      color: gray;
-      &:hover {
-        color: gray;
-      }
-      &:visited{
-        color:#777
-      }
-    }
-    div {
-      display: inline;
-    }
-  }
   /*=======================================================================================
     Responsive
   =======================================================================================*/
