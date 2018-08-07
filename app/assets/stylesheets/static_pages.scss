@@ -287,11 +287,9 @@ $gray-darker: darken($gray-medium-light, 10%);
 
 h3.agile-title {
   text-transform: capitalize;
-  color: #333;
-  font-weight: 800;
-  font-size: 1.8em;
-  letter-spacing: 0.5px;
-  line-height: 35px;
+  font-size: 2.3em;
+  color: #2c363e;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 span.w3-line {
@@ -315,6 +313,75 @@ span.w3-line {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+.wthree_head_section p {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  color: #5e5e5e;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+}
+/*=======================================================================================
+  Services
+  =======================================================================================*/
+section.what_you{
+  padding: 5em 0;
+  background-color: #fcfcfc;
+}
+.w3l_header {
+  text-align: center;
+  font-size: 3em;
+  color: #2c363e;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+}
+.wthree_head_section p {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px auto;
+  width: 60%;
+  color: #5e5e5e;
+  line-height: 1.8em;
+  letter-spacing: 1px;
+}
+.wthree_head_section {
+  margin-bottom: 5em;
+}
+.about-info-grids {
+  text-align: center;
+}
+.bord {
+  background: #e8e8e8;
+  height: 1px;
+  width: 75%;
+  margin: 3em auto;
+}
+.about-info.about-info2 {
+ border-left: 1px solid #e8e8e8;
+ border-right: 1px solid #e8e8e8;
+}
+.about-info-grids p {
+  font-size: 15px;
+  margin:0;
+  color: #777;
+  font-weight: 400;
+line-height:1.8em;
+}
+.about-info-grids h4 {
+  font-size: 22px;
+  color: #151515;
+  letter-spacing: .075em;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.about-info-grids i {
+  font-size: 40px;
+  color:#005a17;
+}
+section.what_you {
+  padding: 5em 0;
 }
 /*=======================================================================================
   footer
